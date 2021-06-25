@@ -1,9 +1,20 @@
 <!doctype html>
+
 <head>
-	<title>Teacher login</title>
+	<title>Buzz Cafe</title>
 	<link href="/static/style.css" rel="stylesheet" type="text/css">
 </head>
+
 <body>
-	<h3>Hello Cafe Manager, please enter your login details to head to the webpage!</h3>
-  
+	<h3>Lets get running the cafe!</h3>
+	<a href="/manager">cafe manager login</a>
+	<div class="row">
+		<div class="column">
+			{% for order in uncompleted %} {{ order|safe }} {% endfor %}
+		</div>
+		<div class="column">
+			{% for order in completed %} {{ order|safe }} {% endfor %}
+		</div>
+	</div>
+	<p><a href="/">logout</a></p>
 </body>

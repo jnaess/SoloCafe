@@ -8,6 +8,7 @@ authors = ["JanErik <<>>"]
 python = "^3.8"
 joblib = "^1.0.1"
 flask = "^2.0.1"
+pandas = "^1.2.5"
 
 [tool.poetry.dev-dependencies]
 
