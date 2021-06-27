@@ -10,10 +10,10 @@
 	<a href="/manager">cafe manager login</a>
 	<div class="row">
 		<div class="column">
-			{% for order in uncompleted %} {{ order|safe }} {% endfor %}
+			{% for order in unmade %} {{ order|safe }} {% endfor %}
 		</div>
 		<div class="column">
-			{% for order in completed %} {{ order|safe }} {% endfor %}
+			{% for order in undelivered %} {{ order|safe }} {% endfor %}
 		</div>
 	</div>
 	<p><a href="/">logout</a></p>
