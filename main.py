@@ -3,6 +3,7 @@ from forms import SignUpForm
 import numpy as np
 import pandas as pd
 
+#mackenzie made me make a change
 # Create a flask app
 app = Flask(__name__, template_folder='templates', static_folder='static')
 
